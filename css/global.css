@@ -6,7 +6,9 @@
     background-color: #3a945b;
 }
 
+/*TODO stilare i link*/
+
 .subheader
 {
-    font-style: italic;
+    font-family: "Lucida Console";
 }
