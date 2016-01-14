@@ -23,6 +23,16 @@
     background-color: #007ba4;
 }
 
+a[class^='socicon'] {
+    font-size: 2rem;
+    color: #303030;
+    padding: 0.5rem;
+}
+
+a[class^='socicon']:hover {
+    color: #1a1a1a;
+}
+
 section.content_section {
     padding-top: 1rem;
     padding-bottom: 1rem;
