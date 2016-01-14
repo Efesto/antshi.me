@@ -10,84 +10,119 @@
     <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-<h1 class="row text-center">The man called Marco "Efesto" Polita</h1>
-<section class="row panel" id="bio">
-    <div class="column small-12 medium-4">
-        <a class="th" href="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
-            <img src="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
-        </a>
-    </div>
-    <div class="column small-12 medium-8">
-        <h3 class="subheader">whoami</h3>
-    </div>
-    <div class="column small-11 medium-7">
-        <p>I'm, first of everything else, a software developer.</p>
-        <p>My first blood with computers was at the age of 7 with an <a target="_blank" href="https://en.wikipedia.org/wiki/IBM_Personal_Computer">IBM Model 5150</a> donated from a family friend.</p>
-        <p>Since then i always used computers for a lot of useful and "less useful" tasks but never considered them as a future work provider before the age of 16 when i first met the C at High School.</p>
-        <p>I've been assumed at my first workplace at <a target="_blank" href="http://www.7pixel.it/">7Pixel</a> during my last bachelor's degree stage and there is where i first met the Agile manifesto, Xp Programming and
-        the desire to always learn something new.</p>
-        <p>I currently living in Italy in Cunardo, a small town near Varese in Lombardy.</p>
-    </div>
-</section>
+<!-- It's interesting how "sticky" prevents the bug in which the top bar stops scrolling when navigation menu is expanded on small display instead of "fixed"-->
+<div class="sticky">
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">The man called Marco "Efesto" Polita</a></h1>
+            </li>
 
-<!--<section class="row panel" id="beliefs">-->
-    <!--<div class="column small-12 medium-8 medium-offset-4">-->
-        <!--<h3 class="subheader">The stuff in which i believe</h3>-->
-    <!--</div>-->
-    <!--<div class="column small-11 medium-7">-->
-        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
-        <!--magna aliqua.-->
-        <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-        <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
-        <!--Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
-    <!--</div>-->
-<!--</section>-->
-
-
-<section class="row panel" id="experiences">
-    <div class="column small-12 medium-8 medium-offset-4">
-        <h3 class="subheader">Experiences TODO</h3>
-    </div>
-    <div class="column small-11 medium-7">
-        <p>I worked since the kickstart as fullstack developer to the <a target="_blank" href="http://www.drezzy.it/">Drezzy</a> platform with .NET framework based technologies like MVC framework 3.x, IIS web server and C#</p>
-        <p>As the first big project of my life i really enjoyed working on it: the biz gave us great independence and trust allowing me to learn as much as possibile on the ecommerce world.</p>
-        <p>After the Drezzy project my team was asked to move in a big technical update of the existing backend infrastructure for the whole 7Pixel network.</p>
-        <p>In that occasion i've worked with Apache Solr and Java</p>
-        <p>And now something completely different</p>
-        <p>At some point i found myself learning Android, iOS and Windows Phone for the development of native mobile apps for the <a target="_blank" href="http://www.trovaprezzi.it">TrovaPrezzi</a>
-            price comparison engine.</p>
-        <p>As before, my team and i received great trust from the ca$h guys and the trip went on for roughly 3 years in which i worked mainly on Android platform and server backends using
-        Ruby.</p>
-        <p>Now i'm working in at <a href="https://www.kirivo.it" target="_blank">Kirivo</a> as a Frontend developer using Ruby.</p>
-    </div>
-</section>
-
-
-<section class="row panel" id="passions">
-    <div class="column small-12 medium-8 medium-offset-4">
-        <h3 class="subheader">Passions</h3>
-    </div>
-    <div class="column small-11 medium-7">
-        <p>I consider myself an adventurous guy even if my body says the opposite :)</p>
-        <p>I enjoy hiking, climbing (even if i am a total newbie) and camping.</p>
-        <p>One of my first passion is Air-soft in which i learned the value of team-play and analyzing the actions done.</p>
-        <p>I'm an amateur actor, i acted i some theatrical groups near my town and in Varese receiving not-so-much-forced applause. I even just started with theatrical improvisation.</p>
-    </div>
-</section>
-
-<section class="row panel" id="links">
-    <div class="column small-12 medium-8 medium-offset-4">
-        <h3 class="subheader">Links</h3>
-    </div>
-    <div class="column small-11 medium-7">
-        <ul class="inline-list">
-            <li><a href="https://github.com/Efesto" class="github-link"></a></li>
-            <li><a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="stack_overflow-link"></a></li>
-            <li><a href="https://twitter.com/marcopoliefesto" class="twitter-link"></a></li>
-            <li><a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="linkedin-link"></a></li>
-            <!--TODO: questo forse andrà criptato-->
-            <li><a href="mailto:polita.marco@gmail.com" class="email-link"></a></li>
+            <li class="toggle-topbar">
+                <a href="#"><span>Sections</span></a>
+            </li>
         </ul>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<section id="bio" class="content_section">
+    <div class="row">
+        <div class="column small-12 medium-4">
+            <a class="th" href="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
+                <img src="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
+            </a>
+        </div>
+        <div class="column small-12 medium-8">
+            <h3 class="subheader">whoami</h3>
+        </div>
+        <div class="column small-11 medium-7">
+            <p>I'm, first of everything else, a software developer.</p>
+            <p>My first blood with computers was at the age of 7 with an <a target="_blank"
+                                                                            href="https://en.wikipedia.org/wiki/IBM_Personal_Computer">IBM
+                Model 5150</a> donated from a family friend.</p>
+            <p>Since then i always used computers for a lot of useful and "less useful" tasks but never considered them
+                as a future work provider before the age of 16 when i first met the C at High School.</p>
+            <p>I've been assumed at my first workplace at <a target="_blank" href="http://www.7pixel.it/">7Pixel</a>
+                during my last bachelor's degree stage and there is where i first met the Agile manifesto, Xp
+                Programming and
+                the desire to always learn something new.</p>
+            <p>I currently living in Italy in Cunardo, a small town near Varese in Lombardy.</p>
+        </div>
+    </div>
+</section>
+
+<section id="experiences" class="content_section">
+    <div class="row">
+        <div class="column small-12 medium-8 medium-offset-4">
+            <h3 class="subheader">Experiences TODO</h3>
+        </div>
+        <div class="column small-11 medium-7">
+            <p>I worked since the kickstart as fullstack developer to the <a target="_blank"
+                                                                             href="http://www.drezzy.it/">Drezzy</a>
+                platform with .NET framework based technologies like MVC framework 3.x, IIS web server and C#</p>
+            <p>As the first big project of my life i really enjoyed working on it: the biz gave us great independence
+                and
+                trust allowing me to learn as much as possibile on the ecommerce world.</p>
+            <p>After the Drezzy project my team was asked to move in a big technical update of the existing backend
+                infrastructure for the whole 7Pixel network.</p>
+            <p>In that occasion i've worked with Apache Solr and Java</p>
+            <p>And now something completely different</p>
+            <p>At some point i found myself learning Android, iOS and Windows Phone for the development of native mobile
+                apps for the <a target="_blank" href="http://www.trovaprezzi.it">TrovaPrezzi</a>
+                price comparison engine.</p>
+            <p>As before, my team and i received great trust from the ca$h guys and the trip went on for roughly 3 years
+                in
+                which i worked mainly on Android platform and server backends using
+                Ruby.</p>
+            <p>Now i'm working in at <a href="https://www.kirivo.it" target="_blank">Kirivo</a> as a Frontend developer
+                using Ruby.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="passions" class="content_section">
+    <div class="row">
+        <div class="column small-12 medium-8 medium-offset-4">
+            <h3 class="subheader">Passions</h3>
+        </div>
+        <div class="column small-11 medium-7">
+            <p>I consider myself an adventurous guy even if my body says the opposite :)</p>
+            <p>I enjoy hiking, climbing (even if i am a total newbie) and camping.</p>
+            <p>One of my first passion is Air-soft in which i learned the value of team-play and analyzing the actions
+                done.</p>
+            <p>I'm an amateur actor, i acted i some theatrical groups near my town and in Varese receiving
+                not-so-much-forced applause. I even just started with theatrical improvisation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="links" class="content_section">
+    <div class="row">
+        <div class="column small-12 medium-8 medium-offset-4">
+            <h3 class="subheader">Links</h3>
+        </div>
+        <div class="column small-11 medium-7">
+            <ul class="inline-list">
+                <li><a href="https://github.com/Efesto" class="github-link"></a></li>
+                <li><a href="http://stackoverflow.com/users/4823217/poli?tab=profile"
+                       class="stack_overflow-link"></a>
+                </li>
+                <li><a href="https://twitter.com/marcopoliefesto" class="twitter-link"></a></li>
+                <li><a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="linkedin-link"></a></li>
+                <!--TODO: questo forse andrà criptato-->
+                <li><a href="mailto:polita.marco@gmail.com" class="email-link"></a></li>
+            </ul>
+        </div>
     </div>
 </section>
 
