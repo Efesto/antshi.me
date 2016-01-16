@@ -23,6 +23,14 @@
     background-color: #007ba4;
 }
 
+.subheader {
+    color: #303030;
+}
+
+.clearing-featured-img{
+    margin-bottom: 1rem;
+}
+
 a[class^='socicon'] {
     font-size: 2rem;
     color: #303030;

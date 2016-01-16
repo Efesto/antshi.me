@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="css/global.css"/>
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
+    <!-- TODO: creare thumbnails -->
 </head>
 <body>
 <!-- It's interesting how "sticky" prevents the bug in which the top bar stops scrolling when navigation menu is expanded on small display instead of "fixed"-->
 <div class="sticky">
-    <!--TODO: margine fra navigation topbar e titolo di sezione -->
-
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
@@ -39,9 +38,11 @@
 <section id="bio" class="content_section">
     <div class="row">
         <div class="column small-12 medium-4">
-            <a class="th" href="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
-                <img src="https://www.colourbox.com/preview/3830615-cool-guy-in-glasses.jpg">
-            </a>
+            <ul class="clearing-thumbs clearing-feature" data-clearing>
+                <li class="clearing-featured-img small-12"><img src="img/bio1.jpg" alt="Marco 'Efesto' Politaa Bio 1"></li>
+                <li><img src="img/bio2.jpg"  alt="Marco 'Efesto' Polita Bio 2"></li>
+                <li><img src="img/bio3.jpg"  alt="Marco 'Efesto' Polita Bio 3"></li>
+            </ul>
         </div>
         <div class="column small-12 medium-8">
             <h3 class="subheader">whoami</h3>
@@ -65,15 +66,27 @@
 <section id="experiences" class="content_section">
     <div class="row">
         <div class="column small-12 medium-8 medium-offset-4">
-            <h3 class="subheader">Experiences TODO</h3>
+            <h3 class="subheader">Experiences</h3>
+        </div>
+        <div class="column small-11 small-offset-1 medium-offset-0 medium-4">
+            <ul>
+                <li>2 Years as Full stack developer on <a target="_blank"
+                                                          href="http://www.drezzy.it/">Drezzy</a> website</li>
+                <li>1 Year as backend developer and mantainer for the whole <a target="_blank" href="http://www.7pixel.it/">7Pixel</a> Network</li>
+                <li>3 Years as Mobile Developer for the <a target="_blank" href="http://www.trovaprezzi.it">TrovaPrezzi</a> Apps on iOS, Windows Phone and Android platforms                </li>
+                <li>Currently working as Frontend developer for <a href="https://www.kirivo.it" target="_blank">Kirivo</a></li>
+            </ul>
+            <ul class="clearing-thumbs clearing-feature" data-clearing>
+                <li class="clearing-featured-img small-12"><img src="img/experiences1.jpg" alt="Marco 'Efesto' Polita experiences 1"></li>
+            </ul>
+
         </div>
         <div class="column small-11 medium-7">
-            <p>I worked since the kickstart as fullstack developer to the <a target="_blank"
+            <p>I worked since the kickstart as fullstack developer on the <a target="_blank"
                                                                              href="http://www.drezzy.it/">Drezzy</a>
                 platform with .NET framework based technologies like MVC framework 3.x, IIS web server and C#</p>
             <p>As the first big project of my life i really enjoyed working on it: the biz gave us great independence
-                and
-                trust allowing me to learn as much as possibile on the ecommerce world.</p>
+                and trust allowing me to learn as much as possibile on the ecommerce world.</p>
             <p>After the Drezzy project my team was asked to move in a big technical update of the existing backend
                 infrastructure for the whole 7Pixel network.</p>
             <p>In that occasion i've worked with Apache Solr and Java</p>
@@ -82,9 +95,7 @@
                 apps for the <a target="_blank" href="http://www.trovaprezzi.it">TrovaPrezzi</a>
                 price comparison engine.</p>
             <p>As before, my team and i received great trust from the ca$h guys and the trip went on for roughly 3 years
-                in
-                which i worked mainly on Android platform and server backends using
-                Ruby.</p>
+                in which i worked mainly on Android platform and server backends using Ruby.</p>
             <p>Now i'm working in at <a href="https://www.kirivo.it" target="_blank">Kirivo</a> as a Frontend developer
                 using Ruby.</p>
         </div>
@@ -97,6 +108,14 @@
         <div class="column small-12 medium-8 medium-offset-4">
             <h3 class="subheader">Passions</h3>
         </div>
+
+        <div class="column small-12 medium-4">
+            <ul class="clearing-thumbs clearing-feature" data-clearing>
+                <li class="clearing-featured-img small-12"><img src="img/passions2.jpg" alt="Marco 'Efesto' Polita passions 1"></li>
+                <li><img src="img/passions1.jpg"></li>
+            </ul>
+        </div>
+
         <div class="column small-11 medium-7">
             <p>I consider myself an adventurous guy even if my body says the opposite :)</p>
             <p>I enjoy hiking, climbing (even if i am a total newbie) and camping.</p>
@@ -118,6 +137,7 @@
             <a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="socicon-stackoverflow"></a>
             <a href="https://twitter.com/marcopoliefesto" class="socicon-twitter"></a>
             <a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="socicon-linkedin"></a>
+            <!-- TODO: questa mail andrà criptata in qualche maniera -->
             <a href="mailto:polita.marco@gmail.com" class="socicon-mail"></a>
         </div>
     </div>
