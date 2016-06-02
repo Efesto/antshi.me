@@ -9,33 +9,31 @@
 	
     <link rel="stylesheet" href="css/foundation.min.css"/>
     <link rel="stylesheet" href="css/global.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <script src="js/vendor/modernizr.js"></script>
-</head>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />		
 <body>
-<!-- It's interesting how "sticky" prevents the bug in which the top bar stops scrolling when navigation menu is expanded on small display instead of "fixed"-->
-<div class="sticky">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">The man called Marco "Efesto" Polita</a></h1>
-            </li>
+<div class="top-bar">
+	<div class="top-bar-left">
+	<ul  class="dropdown menu" data-dropdown-menu>
+	<li class="menu-text">
+		<a href="#">The man called Marco "Efesto" Polita</a>
+		</li>
+		</ul>
+	</div>
 
-            <li class="toggle-topbar">
-                <a href="#"><span>Go around!</span></a>
-            </li>
-        </ul>
-
-        <section class="top-bar-section">
-            <ul class="right">
-                <li><a href="#bio">WHOAMI</a></li>
-                <li><a href="#experiences">WORKING EXPERIENCES</a></li>
-                <li><a href="#passions">STUFF I LIKE</a></li>
-                <li><a href="#links">LINKS</a></li>
-            </ul>
-        </section>
-    </nav>
+	<div class="top-bar-right">
+		
+		<ul class="dropdown menu" data-dropdown-menu>
+			<li><a href="https://github.com/Efesto" class="fa fa-github" alt="Github account"></a></li>
+			<li><a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="fa fa-stack-overflow" alt="Stack Overflow account"></a></li>
+			<li><a href="https://twitter.com/marcopoliefesto" class="fa fa-twitter" alt="Twitter account"></a></li>
+			<li><a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="fa fa-linkedin" alt="Linkedin account"></a></li>
+			<li><a class="fa fa-mail" style='display:none' alt="Send me an Email"></a></li>
+			<li><a class="fa" href="Marco Polita EN.pdf" alt="Curriculum Vitae">CV</a></li>
+		</ul>
+	</div>
 </div>
+
+
 <section id="bio" class="content_section">
     <div class="row">
         <div class="column small-12 medium-4">
@@ -120,25 +118,9 @@
         </div>
     </div>
 </section>
-
-<section id="links" class="content_section">
-    <div class="row">
-        <div class="column small-12 medium-8 medium-offset-4">
-            <h3 class="subheader">Links</h3>
-        </div>
-        <div class="column small-11 medium-8">
-            <a href="https://github.com/Efesto" class="fa fa-github" alt="Github account"></a>
-            <a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="fa fa-stack-overflow" alt="Stack Overflow account"></a>
-            <a href="https://twitter.com/marcopoliefesto" class="fa fa-twitter" alt="Twitter account"></a>
-            <a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="fa fa-linkedin" alt="Linkedin account"></a>			
-            <a class="fa fa-mail" style='display:none' alt="Send me an Email"></a>
-			<a class="fa" href="Marco Polita EN.pdf" alt="Curriculum Vitae">CV</a>
-        </div>
-    </div>
-</section>
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
+	<script src="js/jquery.js"></script>
+    <script src="js/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
 <script>
 
 	$(document).ready(function() {

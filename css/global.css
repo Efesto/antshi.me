@@ -1,3 +1,24 @@
+.top-bar, .top-bar ul {
+	background-color: #333333;
+}
+
+.top-bar a:hover {
+    color: #aaaaaa;
+}
+
+a.fa {
+    font-size: 2rem;
+}
+
+.menu-text {	
+	padding: 0rem;
+	font-size: 1.7rem;
+}
+
+.top-bar a {
+	color: #ffffff;		
+    padding: 0.5rem;
+}
 
 #bio, #bio .subheader{
     background-color: #226666;
@@ -40,16 +61,6 @@
 
 .clearing-featured-img{
     margin-bottom: 1rem;
-}
-
-a.fa {
-    font-size: 2rem;
-    color: #000000;
-    padding: 0.5rem;
-}
-
-a.fa:hover {
-    color: #2E2E2E;
 }
 
 section.content_section {
