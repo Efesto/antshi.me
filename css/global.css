@@ -1,0 +1,58 @@
+
+#bio, #bio .subheader{
+    background-color: #226666;
+	color: #ffffff
+}
+
+#bio a {
+	color: #BCDE54
+}
+
+#bio a:hover {
+	color: #ffffff
+}
+
+#experiences, #experiences .subheader {
+    background-color: #2D882D;
+	color: #ffffff
+}
+#experiences a {
+	color: #00EB9C
+}
+
+#experiences a:hover {
+	color: #ffffff
+}
+
+#passions, #passions .subheader {
+    background-color: #FFBF3A;
+	color: #000000
+}
+
+#links {
+    background-color: #226666;
+}
+
+
+#links .subheader{
+    color: #000000;
+}
+
+.clearing-featured-img{
+    margin-bottom: 1rem;
+}
+
+a.fa {
+    font-size: 2rem;
+    color: #000000;
+    padding: 0.5rem;
+}
+
+a.fa:hover {
+    color: #2E2E2E;
+}
+
+section.content_section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
