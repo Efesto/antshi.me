@@ -19,9 +19,7 @@
 		</li>
 		</ul>
 	</div>
-
-	<div class="top-bar-right">
-		
+	<div class="top-bar-right">		
 		<ul class="dropdown menu" data-dropdown-menu>
 			<li><a href="https://github.com/Efesto" class="fa fa-github" alt="Github account"></a></li>
 			<li><a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="fa fa-stack-overflow" alt="Stack Overflow account"></a></li>
@@ -36,12 +34,19 @@
 
 <section id="bio" class="content_section">
     <div class="row">
-        <div class="column small-12 medium-4">
-            <ul class="clearing-thumbs clearing-feature text-center" data-clearing>
-                <li class="clearing-featured-img small-12"><a href="img/bio1.jpg"><img src="img/bio-th.jpg" alt="Marco 'Efesto' Polita Bio 1"></a></li>
-                <li><img src="img/bio2.jpg"  alt="Marco 'Efesto' Polita Bio 2"></li>
-                <li><img src="img/bio3.jpg"  alt="Marco 'Efesto' Polita Bio 3"></li>
+        <div class="column small-12 medium-4 orbit" role="region" data-orbit>
+			<ul class="orbit-container">
+				<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+				<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                <li class="is-active orbit-slide"><img class="orbit-image" src="img/bio-th.jpg" alt="Marco 'Efesto' Polita Bio 1"></a></li>
+                <li class="orbit-slide"><img class="orbit-image" src="img/bio2.jpg"  alt="Marco 'Efesto' Polita Bio 2"></li>
+                <li class="orbit-slide"><img class="orbit-image" src="img/bio3.jpg"  alt="Marco 'Efesto' Polita Bio 3"></li>
             </ul>
+			<nav class="orbit-bullets">
+				<button class="is-active" data-slide="0"></button>
+				<button data-slide="1"></button>
+				<button data-slide="2"></button>
+			</nav>
         </div>
         <div class="column small-12 medium-8">
             <h3 class="subheader">whoami</h3>
@@ -64,15 +69,13 @@
             <h3 class="subheader">Working Experiences</h3>
         </div>
         <div class="column medium-4">
-			<ul class="column small-12 clearing-thumbs clearing-feature text-center" data-clearing>
-				<li class="clearing-featured-img small-12"><a href="img/experiences1.jpg"><img src="img/experiences-th.jpg" alt="Marco 'Efesto' Polita experiences 1"></a></li>
+			<img class="column small-12" src="img/experiences-th.jpg" alt="Marco 'Efesto' Polita experiences 1" style="margin-bottom: 1rem"/>
+			<ul class="column  small-11 small-offset-1 medium-offset-0 ">
+				<li><strong>2 Years as full stack developer</strong></li>
+				<li><strong>1 Year as backend developer and mantainer</strong></li>
+				<li><strong>3 Years as native mobile developer</strong> on iOS, Windows Phone and Android platforms</li>
+				<li><strong>Currently working as Frontend developer</strong></li>
 			</ul>
-            <ul class="column  small-11 small-offset-1 medium-offset-0 ">
-                <li><strong>2 Years as full stack developer</strong></li>
-                <li><strong>1 Year as backend developer and mantainer</strong></li>
-                <li><strong>3 Years as native mobile developer</strong> on iOS, Windows Phone and Android platforms</li>
-                <li><strong>Currently working as Frontend developer</strong></li>
-            </ul>
 		</div>
 		
         <div class="column small-11 medium-8">
@@ -101,13 +104,18 @@
             <h3 class="subheader">Stuff I like</h3>
         </div>
 
-        <div class="column small-12 medium-4">
-            <ul class="clearing-thumbs clearing-feature text-center" data-clearing>
-                <li class="clearing-featured-img small-12"><a href="img/passions2.jpg"><img src="img/passions-th.jpg" alt="Marco 'Efesto' Polita passions 1"></a></li>
-                <li><img src="img/passions1.jpg"></li>
+		<div class="column small-12 medium-4 orbit" role="region" data-orbit>
+			<ul class="orbit-container">
+				<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+				<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                <li class="is-active orbit-slide"><img class="orbit-image" src="img/passions2.jpg"></li>
+                <li class="orbit-slide"><img class="orbit-image" src="img/passions1.jpg"></li>
             </ul>
-        </div>
-
+			<nav class="orbit-bullets">
+				<button class="is-active" data-slide="0"></button>
+				<button data-slide="1"></button>
+			</nav>
+        </div>	
         <div class="column small-11 medium-8">
             <p>I consider myself an adventurous guy even if my pear-shaped body says the opposite.</p>            
             <p><strong>One of my first passions is Air-soft</strong> in which I learned the value of team-play, analyzing the actions
