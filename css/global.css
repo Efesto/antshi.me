@@ -2,6 +2,11 @@
 	background-color: #333333;
 }
 
+.sticky.is-stuck {
+	/* this is for the carousels arrows floating over top-bar */
+	z-index: 4;
+}
+
 .top-bar a:hover {
     color: #aaaaaa;
 }
