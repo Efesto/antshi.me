@@ -38,8 +38,6 @@
     <div class="row">
         <div class="column small-12 medium-4 orbit" role="region" data-orbit>
 			<ul class="orbit-container">
-				<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-				<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                 <li class="is-active orbit-slide"><img class="orbit-image" src="img/bio1.jpg" alt="Marco 'Efesto' Polita Bio 1"></a></li>
                 <li class="orbit-slide"><img class="orbit-image" src="img/bio2.jpg"  alt="Marco 'Efesto' Polita Bio 2"></li>
                 <li class="orbit-slide"><img class="orbit-image" src="img/bio3.jpg"  alt="Marco 'Efesto' Polita Bio 3"></li>
@@ -108,8 +106,6 @@
 
 		<div class="column small-12 medium-4 orbit" role="region" data-orbit>
 			<ul class="orbit-container">
-				<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-				<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                 <li class="is-active orbit-slide"><img class="orbit-image" src="img/passions2.jpg"></li>
                 <li class="orbit-slide"><img class="orbit-image" src="img/passions1.jpg"></li>				
                 <li class="orbit-slide"><img class="orbit-image" src="img/passions3.jpg"></li>
@@ -135,6 +131,15 @@
     <script src="js/foundation.min.js"></script>
 <script>
 
+	var initOrbitContainers = function() {
+		console.log('yeah!');
+		$('.orbit-container').each(function() {
+			$(this).prepend(
+			"<button class=\"orbit-previous\"><span class=\"show-for-sr\">Previous Photo</span>&#9664;&#xFE0E;</button>"
+			+ "<button class=\"orbit-next\"><span class=\"show-for-sr\">Next Photo</span>&#9654;&#xFE0E;</button>");
+		}); 
+	};
+
 	var addEmail = function() {
 		var mailLink = $('.mail');
 		var ma = 'mai';
@@ -152,6 +157,7 @@
 
 	$(document).ready(addEmail);	
 	
+	initOrbitContainers();	
     $(document).foundation();
 </script>
 </body>
