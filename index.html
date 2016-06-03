@@ -26,7 +26,7 @@
 				<li><a href="http://stackoverflow.com/users/4823217/poli?tab=profile" class="fa fa-stack-overflow" alt="Stack Overflow account"></a></li>
 				<li><a href="https://twitter.com/marcopoliefesto" class="fa fa-twitter" alt="Twitter account"></a></li>
 				<li><a href="https://it.linkedin.com/in/marco-polita-4a70891b" class="fa fa-linkedin" alt="Linkedin account"></a></li>
-				<li><a class="fa fa-mail" style='display:none' alt="Send me an Email"></a></li>
+				<li><a class="fa fa-envelope mail" style='display:none' alt="Send me an Email"></a></li>
 				<li><a class="fa" href="Marco Polita EN.pdf" alt="Curriculum Vitae">CV</a></li>
 			</ul>
 		</div>
@@ -135,18 +135,22 @@
     <script src="js/foundation.min.js"></script>
 <script>
 
-	$(document).ready(function() {
+	var addEmail = function() {
+		var mailLink = $('.mail');
 		var ma = 'mai';
 		ma += 'lto:polita.ma';		
-		var walter_white = 'rco+chiocciola+gma';
-		walter_white += 'il+punto+com';
-		var meh = ma + walter_white;
+		var walterWhite = 'rco+chiocciola+gma';
+		walterWhite += 'il+punto+com';
+		var meh = ma + walterWhite;
 		meh = meh.replace('+chiocciola+', '@');
 		meh = meh.replace('+punto+', '.');
 		
-		$('.socicon-mail').attr('href', meh);
-		$('.socicon-mail').attr('style', '');
-	});
+		mailLink.attr('href', meh);
+		mailLink.attr('style', '');
+	};
+	
+
+	$(document).ready(addEmail);	
 	
     $(document).foundation();
 </script>
