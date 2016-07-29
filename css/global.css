@@ -2,6 +2,14 @@
 	background-color: #333333;
 }
 
+ul.list {
+	list-style-type: none;
+}
+
+ul.list li{
+	display: inline;
+}
+
 .sticky.is-stuck {
 	/* this is for the carousels arrows floating over top-bar */
 	z-index: 4;
