@@ -1,2 +1,6 @@
 .idea
 *.iml
+.DS_Store
+cv/*.log
+cv/*.out
+cv/*.aux
