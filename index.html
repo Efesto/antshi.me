@@ -35,13 +35,12 @@
                 <a class="fa fa-wordpress" href="http://blog.marcopolita.net"></a>
             </div>
             <div class="column small-12 medium-6">
-                <a class="fa fa-envelope mail" style='display:none'></a>
+                <a class="fa fa-envelope" id="mail_link" style='display:none'></a>
             </div>
             <div class="column small-12 medium-6">
                 <a class="fa link__cv" href="Marco Polita EN.pdf">CV</a>
             </div>
         </section>
-        <script src="js/jquery.js"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -62,29 +61,19 @@
 
         <script>
 
-            var initOrbitContainers = function () {
-                $('.orbit-container').each(function () {
-                    $(this).prepend(
-                        "<button class=\"orbit-previous\"><span class=\"show-for-sr\">Previous Photo</span>&#9664;&#xFE0E;</button>"
-                        + "<button class=\"orbit-next\"><span class=\"show-for-sr\">Next Photo</span>&#9654;&#xFE0E;</button>");
-                });
-            };
-
-            var addEmail = function () {
-                var mailLink = $('.mail');
-                var ma = 'mai';
+            document.addEventListener("DOMContentLoaded", function (event) {
+                const mailLink = document.getElementById('mail_link');
+                let ma = 'mai';
                 ma += 'lto:polita.ma';
-                var walterWhite = 'rco+chiocciola+gma';
+                let walterWhite = 'rco+chiocciola+gma';
                 walterWhite += 'il+punto+com';
-                var meh = ma + walterWhite;
+                let meh = ma + walterWhite;
                 meh = meh.replace('+chiocciola+', '@');
                 meh = meh.replace('+punto+', '.');
 
-                mailLink.attr('href', meh);
-                mailLink.attr('style', '');
-            };
-
-            $(document).ready(addEmail);
+                mailLink.setAttribute('href', meh);
+                mailLink.setAttribute('style', '');
+            });
         </script>
     </body>
 
