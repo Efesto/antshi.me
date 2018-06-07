@@ -1,82 +1,32 @@
-.top-bar, .top-bar ul {
-	background-color: #333333;
+.column {
+  border: solid 3px #ccc;
+  margin: 0;
+  padding: 0;
 }
 
-ul.list {
-	list-style-type: none;
+.content__image {
+	max-height: 20rem;
+	max-width: 20rem;
 }
 
-ul.list li{
-	display: inline;
+.column .fa {
+  background: #333;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rem;
+  width: 100%;
+  height: 24rem;
+  padding: 2rem;
 }
 
-.sticky.is-stuck {
-	/* this is for the carousels arrows floating over top-bar */
-	z-index: 4;
+.column .link__cv {
+	font-size: 14rem;
+	
 }
 
-.top-bar a:hover {
-    color: #aaaaaa;
-}
-
-a.fa {
-    font-size: 2rem;
-}
-
-.menu-text {	
-	padding: 0rem;
-	font-size: 1.7rem;
-}
-
-.top-bar a {
-	color: #ffffff;		
-    padding: 0.5rem;
-}
-
-#bio, #bio .subheader{
-    background-color: #226666;
-	color: #ffffff
-}
-
-#bio a {
-	color: #BCDE54
-}
-
-#bio a:hover {
-	color: #ffffff
-}
-
-#experiences, #experiences .subheader {
-    background-color: #2D882D;
-	color: #ffffff
-}
-#experiences a {
-	color: #00EB9C
-}
-
-#experiences a:hover {
-	color: #ffffff
-}
-
-#passions, #passions .subheader {
-    background-color: #FFBF3A;
-	color: #000000
-}
-
-#links {
-    background-color: #226666;
-}
-
-
-#links .subheader{
-    color: #000000;
-}
-
-.clearing-featured-img{
-    margin-bottom: 1rem;
-}
-
-section.content_section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.column a.fa:hover {
+  background: #ccc;
+  color: #333;
 }
