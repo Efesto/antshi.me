@@ -1,0 +1,41 @@
+:root {
+  --color_secondary: #ccc;
+  --color_primary: #333;
+}
+
+.blocks-container {
+  background: var(--color_secondary);
+}
+
+.block__image {
+  max-height: 24vh;
+}
+
+.block {
+  background: var(--color_primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  height: 25vh;
+  padding: 0;
+  border: 3px solid var(--color_secondary);
+}
+
+.link {
+  color: var(--color_secondary);
+  width: 100%;
+  height: 100%;
+  padding-top: 7vh;
+  text-align: center;
+}
+
+
+.block--link:hover {
+  background: var(--color_secondary);
+  color: var(--color_primary);
+}
+
+.block--link:hover .link {
+  color: var(--color_primary);
+}
