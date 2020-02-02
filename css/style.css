@@ -32,6 +32,7 @@
 .block--link:hover {
   background: var(--color_secondary);
   color: var(--color_primary);
+  cursor: pointer;
 }
 
 .block--link:hover .link {

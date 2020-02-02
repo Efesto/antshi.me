@@ -60,13 +60,13 @@
 
             ga('create', 'UA-63372325-2', 'auto');
             ga('send', 'pageview');
-
         </script>
 
         <script>
+        </script>
 
-            document.addEventListener("DOMContentLoaded", function (event) {
-                const mailLink = document.getElementById('mail_link');
+        <script>
+            function setMailAddress(mailElement) {
                 let ma = 'mai';
                 ma += 'lto:polita.ma';
                 let walterWhite = 'rco+chiocciola+gma';
@@ -75,9 +75,20 @@
                 meh = meh.replace('+chiocciola+', '@');
                 meh = meh.replace('+punto+', '.');
 
-                mailLink.setAttribute('href', meh);
-                mailLink.setAttribute('style', '');
+                mailElement.setAttribute('href', meh);
+                mailElement.setAttribute('style', '');
+            }
+
+            document.addEventListener("DOMContentLoaded", event => {
+                setMailAddress(document.getElementById('mail_link'));
+                
+                Array.from(document.getElementsByClassName('block--link')).forEach(element => {
+                    element.addEventListener("click", event => {
+                        element.getElementsByClassName('link')[0].click()
+                    })
+                });
             });
+
         </script>
     </body>
 
