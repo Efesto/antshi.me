@@ -24,10 +24,13 @@
 
 .link {
   color: var(--color_secondary);
+
+}
+
+.icon {
   max-width: 80%;
   max-height: 80%;
 }
-
 
 .block--link:hover {
   background: var(--color_secondary);
