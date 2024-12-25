@@ -8,7 +8,7 @@
 }
 
 .block__image {
-  max-height: 23vh;
+  max-height: 48vh;
 }
 
 .block {
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: 6rem;
-  height: 25vh;
+  height: 50vh;
   padding: 0;
   border: 3px solid var(--color_secondary);
 }

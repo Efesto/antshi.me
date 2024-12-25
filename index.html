@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content='Marco "Efesto" Polita'>
-    <title>Marco "Efesto" Polita</title>
+    <meta name="description" content="Someone Someone's website">
+    <title>Someone Someone</title>
 
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,54 +15,21 @@
     <section class="blocks-container">
         <div class="block block--link column small-6">
             <a href="/blog/about" class="fa link">
-                <img src="img/me.jpg" class="block__image" alt="Marco 'Efesto' Polita face" />
+                <img src="img/me.jpg" class="block__image" alt="Someone Someone's face" />
             </a>
         </div>
         <div class="block block--link column small-6">
-            <a href="https://github.com/Efesto" class="fa fa-github link icon"></a>
+            <a href="https://github.com/Antshi" class="fa fa-github link icon"></a>
         </div>
         <div class="block block--link column small-6">
-            <a href="http://stackoverflow.com/users/story/4823217" class="fa fa-stack-overflow link icon"></a>
-        </div>
-        <div class="block block--link column small-6">
-            <a href="https://www.linkedin.com/in/marco-polita-4a70891b" class="fa fa-linkedin link icon"></a>
-        </div>
-        <div class="block block--link column small-6">
-            <a class="fa fa-rss link icon" href="/blog"></a>
-        </div>
-        <div class="block block--link column small-6">
-            <a class="fa fa-youtube link icon" href="https://www.youtube.com/channel/UCL6anY78_E2JnYSjVQlMiXw"></a>
+            <a href="linkedinglinkeinsd" class="fa fa-linkedin link icon"></a>
         </div>
         <div class="block block--link column small-6">
             <a class="fa fa-envelope link icon" id="mail_link" style='display:none'></a>
         </div>
-        <div class="block block--link column small-6">
-            <a class="fa link__cv link icon" href="Marco Polita EN.pdf">CV</a>
-        </div>
     </section>
     <script>
-        function setMailAddress(mailElement) {
-            let ma = 'mai';
-            ma += 'lto:polita.ma';
-            let walterWhite = 'rco+chiocciola+gma';
-            walterWhite += 'il+punto+com';
-            let meh = ma + walterWhite;
-            meh = meh.replace('+chiocciola+', '@');
-            meh = meh.replace('+punto+', '.');
-
-            mailElement.setAttribute('href', meh);
-            mailElement.setAttribute('style', '');
-        }
-
-        document.addEventListener("DOMContentLoaded", event => {
-            setMailAddress(document.getElementById('mail_link'));
-
-            Array.from(document.getElementsByClassName('block--link')).forEach(element => {
-                element.addEventListener("click", event => {
-                    element.getElementsByClassName('link')[0].click()
-                })
-            });
-        });
+        
 
     </script>
 </body>
